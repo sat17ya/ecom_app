@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -10,10 +11,10 @@ export const Header = () => {
           <img src="../Images/logo.png" alt="" />
         </div>
         <div className="links">
-          <a href={undefined}>Home</a>
-          <a href={undefined}>Shop</a>
-          <a href={undefined}>Admin</a>
-          <a href={undefined}>Blog</a>
+          <Link to={undefined}>Home</Link>
+          <Link to={undefined}>Shop</Link>
+          <Link to={undefined}>Admin</Link>
+          <Link to={undefined}>Blog</Link>
         </div>
         <div className="icons">
           <div className="icon">
@@ -34,18 +35,18 @@ export const Header = () => {
       </div>
       <div className={`mobile-nav ${mobileNav ? "active" : ""}`}>
         <div className="links">
-          <a onClick={() => setMobileNav(!mobileNav)} href="#">
+          <Link onClick={() => setMobileNav(!mobileNav)} to="#">
             Home
-          </a>
-          <a onClick={() => setMobileNav(!mobileNav)} href="#">
+          </Link>
+          <Link onClick={() => setMobileNav(!mobileNav)} to="#">
             Shop
-          </a>
-          <a onClick={() => setMobileNav(!mobileNav)} href="#">
+          </Link>
+          <Link onClick={() => setMobileNav(!mobileNav)} to="#">
             Blog
-          </a>
-          <a onClick={() => setMobileNav(!mobileNav)} href="#">
+          </Link>
+          <Link onClick={() => setMobileNav(!mobileNav)} to="#">
             Admin
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

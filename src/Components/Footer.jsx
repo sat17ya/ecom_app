@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export const Footer = () => {
   return (
@@ -14,25 +15,25 @@ export const Footer = () => {
             </div>
             <p>© Copyright 2022 Plus.</p>
             <div className="links">
-              <a href="#">Home</a>
-              <a href="#">Shop</a>
-              <a href="#">Blog</a>
-              <a href="#">Admin</a>
+              <Link to="#">Home</Link>
+              <Link to="#">Shop</Link>
+              <Link to="#">Blog</Link>
+              <Link to="#">Admin</Link>
             </div>
           </div>
           <div className="social-icons">
-            <a href="#">
+            <Link to="#">
               <i className="fab fa-facebook"></i>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <i className="fab fa-youtube"></i>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="#">
               <i className="fab fa-instagram"></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
