@@ -36,7 +36,11 @@ body {
   border: none;
   outline: none;
 }
-
+.logo>img{
+  width: 157px;
+    height: 102px;
+    margin-bottom: 2rem;
+}
 nav .container {
   height: 80px;
   display: flex;

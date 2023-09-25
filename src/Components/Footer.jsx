@@ -11,7 +11,7 @@ export const Footer = () => {
           </div>
           <div className="content">
             <div className="logo">
-              <img src="../Images/logo.png" alt="" />
+              <img src="../Images/Plus.png" alt="" />
             </div>
             <p>© Copyright 2022 Plus.</p>
             <div className="links">
